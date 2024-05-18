@@ -78,6 +78,7 @@
     <Content Include="Categories.aspx" />
     <Content Include="CategoryAdd.aspx" />
     <Content Include="CategoryDelete.aspx" />
+    <Content Include="CategoryUpdate.aspx" />
     <Content Include="Entity\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
@@ -118,6 +119,13 @@
     </Compile>
     <Compile Include="CategoryDelete.aspx.designer.cs">
       <DependentUpon>CategoryDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryUpdate.aspx.cs">
+      <DependentUpon>CategoryUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryUpdate.aspx.designer.cs">
+      <DependentUpon>CategoryUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Entity\Model1.Context.cs">
       <AutoGen>True</AutoGen>
