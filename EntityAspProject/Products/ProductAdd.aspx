@@ -16,7 +16,7 @@
                         <asp:TextBox runat="server" ID="txtPrdBrand" CssClass="form-control" placeholder="Ürün Markası"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <asp:TextBox runat="server" ID="txtPrdCategory" CssClass="form-control" placeholder="Ürün Kategorisi"></asp:TextBox>
+                        <asp:DropDownList ID="ddlPrdCategory" runat="server" CssClass="form-control" placeholder="Ürün Kategorisi"></asp:DropDownList>
                     </div>
                     <div class="form-group">
                         <asp:TextBox runat="server" ID="txtPrdPrice" CssClass="form-control" placeholder="Ürün Fiyatı"></asp:TextBox>

@@ -33,13 +33,13 @@ namespace EntityAspProject.Products
         protected global::System.Web.UI.WebControls.TextBox txtPrdBrand;
 
         /// <summary>
-        /// txtPrdCategory control.
+        /// ddlPrdCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPrdCategory;
+        protected global::System.Web.UI.WebControls.DropDownList ddlPrdCategory;
 
         /// <summary>
         /// txtPrdPrice control.
