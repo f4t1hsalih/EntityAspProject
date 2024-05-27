@@ -89,6 +89,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Products\ProductAdd.aspx" />
     <Content Include="Products\ProductList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -157,6 +158,13 @@
     </Compile>
     <Compile Include="Entity\tbl_staff.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Products\ProductAdd.aspx.cs">
+      <DependentUpon>ProductAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\ProductAdd.aspx.designer.cs">
+      <DependentUpon>ProductAdd.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products\ProductList.aspx.cs">
       <DependentUpon>ProductList.aspx</DependentUpon>
