@@ -19,6 +19,7 @@ namespace EntityAspProject.Entity
         public Nullable<byte> sal_stf { get; set; }
         public Nullable<int> sal_ctm { get; set; }
         public Nullable<decimal> sal_price { get; set; }
+        public Nullable<bool> sal_status { get; set; }
     
         public virtual tbl_customer tbl_customer { get; set; }
         public virtual tbl_product tbl_product { get; set; }

@@ -23,6 +23,7 @@ namespace EntityAspProject.Entity
         public int ctm_id { get; set; }
         public string ctm_name { get; set; }
         public string ctm_surname { get; set; }
+        public Nullable<bool> ctm_status { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tbl_sale> tbl_sale { get; set; }

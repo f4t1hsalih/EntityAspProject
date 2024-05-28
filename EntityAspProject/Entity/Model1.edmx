@@ -11,6 +11,7 @@
           </Key>
           <Property Name="ctg_id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ctg_name" Type="varchar" MaxLength="20" />
+          <Property Name="ctg_status" Type="bit" />
         </EntityType>
         <EntityType Name="tbl_customer">
           <Key>
@@ -19,6 +20,7 @@
           <Property Name="ctm_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ctm_name" Type="varchar" MaxLength="20" />
           <Property Name="ctm_surname" Type="varchar" MaxLength="20" />
+          <Property Name="ctm_status" Type="bit" />
         </EntityType>
         <EntityType Name="tbl_product">
           <Key>
@@ -41,6 +43,7 @@
           <Property Name="sal_stf" Type="tinyint" />
           <Property Name="sal_ctm" Type="int" />
           <Property Name="sal_price" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="sal_status" Type="bit" />
         </EntityType>
         <EntityType Name="tbl_staff">
           <Key>
@@ -48,6 +51,7 @@
           </Key>
           <Property Name="stf_id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="stf_name_surname" Type="varchar" MaxLength="50" />
+          <Property Name="stf_status" Type="bit" />
         </EntityType>
         <Association Name="FK_tbl_product_tbl_category">
           <End Role="tbl_category" Type="Self.tbl_category" Multiplicity="0..1" />
@@ -131,6 +135,7 @@
           <Property Name="ctg_id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ctg_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="tbl_product" Relationship="Self.FK_tbl_product_tbl_category" FromRole="tbl_category" ToRole="tbl_product" />
+          <Property Name="ctg_status" Type="Boolean" />
         </EntityType>
         <EntityType Name="tbl_customer">
           <Key>
@@ -140,6 +145,7 @@
           <Property Name="ctm_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="ctm_surname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="tbl_sale" Relationship="Self.FK_tbl_sale_tbl_customer" FromRole="tbl_customer" ToRole="tbl_sale" />
+          <Property Name="ctm_status" Type="Boolean" />
         </EntityType>
         <EntityType Name="tbl_product">
           <Key>
@@ -167,6 +173,7 @@
           <NavigationProperty Name="tbl_customer" Relationship="Self.FK_tbl_sale_tbl_customer" FromRole="tbl_sale" ToRole="tbl_customer" />
           <NavigationProperty Name="tbl_product" Relationship="Self.FK_tbl_sale_tbl_product" FromRole="tbl_sale" ToRole="tbl_product" />
           <NavigationProperty Name="tbl_staff" Relationship="Self.FK_tbl_sale_tbl_staff" FromRole="tbl_sale" ToRole="tbl_staff" />
+          <Property Name="sal_status" Type="Boolean" />
         </EntityType>
         <EntityType Name="tbl_staff">
           <Key>
@@ -175,6 +182,7 @@
           <Property Name="stf_id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="stf_name_surname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="tbl_sale" Relationship="Self.FK_tbl_sale_tbl_staff" FromRole="tbl_staff" ToRole="tbl_sale" />
+          <Property Name="stf_status" Type="Boolean" />
         </EntityType>
         <Association Name="FK_tbl_product_tbl_category">
           <End Role="tbl_category" Type="Self.tbl_category" Multiplicity="0..1" />
@@ -256,6 +264,7 @@
           <EntitySetMapping Name="tbl_category">
             <EntityTypeMapping TypeName="UdemyProductTrackingModel.tbl_category">
               <MappingFragment StoreEntitySet="tbl_category">
+                <ScalarProperty Name="ctg_status" ColumnName="ctg_status" />
                 <ScalarProperty Name="ctg_id" ColumnName="ctg_id" />
                 <ScalarProperty Name="ctg_name" ColumnName="ctg_name" />
               </MappingFragment>
@@ -264,6 +273,7 @@
           <EntitySetMapping Name="tbl_customer">
             <EntityTypeMapping TypeName="UdemyProductTrackingModel.tbl_customer">
               <MappingFragment StoreEntitySet="tbl_customer">
+                <ScalarProperty Name="ctm_status" ColumnName="ctm_status" />
                 <ScalarProperty Name="ctm_id" ColumnName="ctm_id" />
                 <ScalarProperty Name="ctm_name" ColumnName="ctm_name" />
                 <ScalarProperty Name="ctm_surname" ColumnName="ctm_surname" />
@@ -286,6 +296,7 @@
           <EntitySetMapping Name="tbl_sale">
             <EntityTypeMapping TypeName="UdemyProductTrackingModel.tbl_sale">
               <MappingFragment StoreEntitySet="tbl_sale">
+                <ScalarProperty Name="sal_status" ColumnName="sal_status" />
                 <ScalarProperty Name="sal_id" ColumnName="sal_id" />
                 <ScalarProperty Name="sal_prd" ColumnName="sal_prd" />
                 <ScalarProperty Name="sal_stf" ColumnName="sal_stf" />
@@ -297,6 +308,7 @@
           <EntitySetMapping Name="tbl_staff">
             <EntityTypeMapping TypeName="UdemyProductTrackingModel.tbl_staff">
               <MappingFragment StoreEntitySet="tbl_staff">
+                <ScalarProperty Name="stf_status" ColumnName="stf_status" />
                 <ScalarProperty Name="stf_id" ColumnName="stf_id" />
                 <ScalarProperty Name="stf_name_surname" ColumnName="stf_name_surname" />
               </MappingFragment>

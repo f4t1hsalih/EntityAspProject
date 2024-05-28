@@ -23,9 +23,9 @@
                         <ItemTemplate>
                             <tr>
                                 <td><%# Eval("sal_id") %></td>
-                                <td><%# Eval("sal_prd") %></td>
-                                <td><%# Eval("sal_stf") %></td>
-                                <td><%# Eval("sal_ctm") %></td>
+                                <td><%# Eval("prd_name") %></td>
+                                <td><%# Eval("stf_name_surname") %></td>
+                                <td><%# Eval("customer") %></td>
                                 <td><%# Eval("sal_price") %> ₺</td>
                                 <td><asp:HyperLink ID="DeleteLink" runat="server" CssClass="btn btn-danger" NavigateUrl='<%# "/Sales/SaleDelete.aspx?Delete=" + Eval("sal_id") %>'>Sil</asp:HyperLink></td>
                                 <td><asp:HyperLink ID="UpdateLink" runat="server" CssClass="btn btn-warning" NavigateUrl='<%# "/Sales/SaleUpdate.aspx?Update=" + Eval("sal_id") %>'>Güncelle</asp:HyperLink></td>

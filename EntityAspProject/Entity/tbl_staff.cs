@@ -22,6 +22,7 @@ namespace EntityAspProject.Entity
     
         public byte stf_id { get; set; }
         public string stf_name_surname { get; set; }
+        public Nullable<bool> stf_status { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tbl_sale> tbl_sale { get; set; }
