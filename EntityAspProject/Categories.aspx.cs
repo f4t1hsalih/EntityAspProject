@@ -7,10 +7,12 @@ namespace EntityAspProject
 {
     public partial class Categories : System.Web.UI.Page
     {
-        UdemyProductTrackingEntities db = new UdemyProductTrackingEntities();
+        
         protected void Page_Load(object sender, EventArgs e)
         {
-            Repeater1.DataSource = db.tbl_category.ToList();
+            UdemyProductTrackingEntities db = new UdemyProductTrackingEntities();
+            var values = (from x in db.tbl_category where x.ctg_status != false select x).ToList();
+            Repeater1.DataSource = values;
             Repeater1.DataBind();
         }
     }

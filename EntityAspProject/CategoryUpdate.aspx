@@ -10,11 +10,12 @@
                 <h2>Kategori Güncelle</h2>
                 <form runat="server" class="form-category">
                     <div class="form-group">
+                        <asp:Label ID="lblCtgID" runat="server" CssClass="form-group" Text="ID"></asp:Label>
                         <asp:TextBox runat="server" ID="txtCategoryID" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                     </div>
-                    <br />
                     <div class="form-group">
-                        <asp:TextBox runat="server" ID="txtCategoryName" CssClass="form-control" placeholder="Kategori Adı"></asp:TextBox>
+                        <asp:Label ID="lblCtgName" runat="server" CssClass="form-group" Text="Kategori Adı"></asp:Label>
+                        <asp:TextBox runat="server" ID="txtCategoryName" CssClass="form-control" placeholder="Kategori Adı..."></asp:TextBox>
                     </div>
                     <br />
                     <div class="form-group">

@@ -10,7 +10,7 @@ namespace EntityAspProject
             int x = Convert.ToInt32(Request.QueryString["Delete"]);
             UdemyProductTrackingEntities db = new UdemyProductTrackingEntities();
             var value = db.tbl_category.Find(x);
-            db.tbl_category.Remove(value);
+            value.ctg_status = false;
             db.SaveChanges();
             Response.Redirect("/Categories.aspx");
         }
