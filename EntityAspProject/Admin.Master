@@ -18,7 +18,7 @@
                 <a class="navbar-brand" href="#">Entity Proje</a>
             </div>
             <ul class="nav navbar-nav">
-                <li><a href="#">Müşteriler</a></li>
+                <li><a href="/Customers/Customers.aspx">Müşteriler</a></li>
                 <li><a href="/Categories.aspx">Kategoriler</a></li>
                 <li><a href="/Products/ProductList.aspx">Ürünler</a></li>
                 <li><a href="#">Personeller</a></li>
