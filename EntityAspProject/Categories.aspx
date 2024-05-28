@@ -28,7 +28,7 @@
                         </asp:Repeater>
                     </tbody>
                 </table>
-                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn btn-primary" NavigateUrl="CategoryAdd.aspx">Yeni Kategori Ekle</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn btn-primary" NavigateUrl="/CategoryAdd.aspx">Yeni Kategori Ekle</asp:HyperLink>
             </div>
         </div>
     </div>

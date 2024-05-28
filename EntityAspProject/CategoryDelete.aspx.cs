@@ -12,7 +12,7 @@ namespace EntityAspProject
             var value = db.tbl_category.Find(x);
             db.tbl_category.Remove(value);
             db.SaveChanges();
-            Response.Redirect("Categories.aspx");
+            Response.Redirect("/Categories.aspx");
         }
     }
 }

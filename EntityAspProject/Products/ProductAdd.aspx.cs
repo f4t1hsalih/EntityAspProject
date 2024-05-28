@@ -30,7 +30,7 @@ namespace EntityAspProject.Products
             product.prd_price = decimal.Parse(txtPrdPrice.Text);
             db.tbl_product.Add(product);
             db.SaveChanges();
-            Response.Redirect("ProductList.aspx");
+            Response.Redirect("/Products/ProductList.aspx");
         }
     }
 }

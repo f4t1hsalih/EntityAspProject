@@ -17,7 +17,7 @@ namespace EntityAspProject
             t.ctg_name = txtCategoryName.Text;
             db.tbl_category.Add(t);
             db.SaveChanges();
-            Response.Redirect("Categories.aspx");
+            Response.Redirect("/Categories.aspx");
         }
     }
 }

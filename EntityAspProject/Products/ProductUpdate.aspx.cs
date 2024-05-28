@@ -28,6 +28,8 @@ namespace EntityAspProject.Products
                 ddlPrdCategory.SelectedValue = product.prd_ctg.ToString();
                 txtPrdPrice.Text = product.prd_price.ToString();
                 txtPrdStock.Text = product.prd_stock.ToString();
+
+                //Response.Redirect("/Products/ProductList.aspx");
             }
         }
     }

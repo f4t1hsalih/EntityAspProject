@@ -23,7 +23,7 @@ namespace EntityAspProject
             int x = Convert.ToInt32(Request.QueryString["Update"]);
             db.tbl_category.Find(x).ctg_name = txtCategoryName.Text;
             db.SaveChanges();
-            Response.Redirect("Categories.aspx");
+            Response.Redirect("/Categories.aspx");
         }
     }
 }
