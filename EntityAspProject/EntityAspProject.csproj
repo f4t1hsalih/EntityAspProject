@@ -75,10 +75,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Categories.aspx" />
-    <Content Include="CategoryAdd.aspx" />
-    <Content Include="CategoryDelete.aspx" />
-    <Content Include="CategoryUpdate.aspx" />
+    <Content Include="Categories\Categories.aspx" />
+    <Content Include="Categories\CategoryAdd.aspx" />
+    <Content Include="Categories\CategoryDelete.aspx" />
+    <Content Include="Categories\CategoryUpdate.aspx" />
     <Content Include="Customers\CustomerDelete.aspx" />
     <Content Include="Customers\Customers.aspx" />
     <Content Include="Customers\CustomerUpdate.aspx" />
@@ -110,32 +110,32 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Categories.aspx.cs">
+    <Compile Include="Categories\Categories.aspx.cs">
       <DependentUpon>Categories.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Categories.aspx.designer.cs">
+    <Compile Include="Categories\Categories.aspx.designer.cs">
       <DependentUpon>Categories.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CategoryAdd.aspx.cs">
+    <Compile Include="Categories\CategoryAdd.aspx.cs">
       <DependentUpon>CategoryAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CategoryAdd.aspx.designer.cs">
+    <Compile Include="Categories\CategoryAdd.aspx.designer.cs">
       <DependentUpon>CategoryAdd.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CategoryDelete.aspx.cs">
+    <Compile Include="Categories\CategoryDelete.aspx.cs">
       <DependentUpon>CategoryDelete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CategoryDelete.aspx.designer.cs">
+    <Compile Include="Categories\CategoryDelete.aspx.designer.cs">
       <DependentUpon>CategoryDelete.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CategoryUpdate.aspx.cs">
+    <Compile Include="Categories\CategoryUpdate.aspx.cs">
       <DependentUpon>CategoryUpdate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CategoryUpdate.aspx.designer.cs">
+    <Compile Include="Categories\CategoryUpdate.aspx.designer.cs">
       <DependentUpon>CategoryUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Customers\CustomerDelete.aspx.cs">

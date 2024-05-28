@@ -19,7 +19,7 @@
             </div>
             <ul class="nav navbar-nav">
                 <li><a href="/Customers/Customers.aspx">Müşteriler</a></li>
-                <li><a href="/Categories.aspx">Kategoriler</a></li>
+                <li><a href="/Categories/Categories.aspx">Kategoriler</a></li>
                 <li><a href="/Products/ProductList.aspx">Ürünler</a></li>
                 <li><a href="#">Personeller</a></li>
                 <li><a href="/Sales/SaleList.aspx">Satışlar</a></li>

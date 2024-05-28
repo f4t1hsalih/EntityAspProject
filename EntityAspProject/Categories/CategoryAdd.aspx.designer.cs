@@ -7,29 +7,29 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EntityAspProject
+namespace EntityAspProject.Categories
 {
 
 
-    public partial class Categories
+    public partial class CategoryAdd
     {
 
         /// <summary>
-        /// Repeater1 control.
+        /// txtCategoryName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Repeater1;
+        protected global::System.Web.UI.WebControls.TextBox txtCategoryName;
 
         /// <summary>
-        /// HyperLink1 control.
+        /// btnCategoryAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.Button btnCategoryAdd;
     }
 }

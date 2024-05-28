@@ -1,7 +1,7 @@
 ﻿using EntityAspProject.Entity;
 using System;
 
-namespace EntityAspProject
+namespace EntityAspProject.Categories
 {
     public partial class CategoryDelete : System.Web.UI.Page
     {
@@ -12,7 +12,7 @@ namespace EntityAspProject
             var value = db.tbl_category.Find(x);
             value.ctg_status = false;
             db.SaveChanges();
-            Response.Redirect("/Categories.aspx");
+            Response.Redirect("/Categories/Categories.aspx");
         }
     }
 }

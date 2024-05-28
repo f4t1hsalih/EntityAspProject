@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EntityAspProject
+namespace EntityAspProject.Categories
 {
 
 

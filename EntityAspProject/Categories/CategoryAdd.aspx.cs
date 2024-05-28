@@ -1,7 +1,7 @@
 ﻿using EntityAspProject.Entity;
 using System;
 
-namespace EntityAspProject
+namespace EntityAspProject.Categories
 {
     public partial class CategoryAdd : System.Web.UI.Page
     {
@@ -17,7 +17,7 @@ namespace EntityAspProject
             t.ctg_name = txtCategoryName.Text;
             db.tbl_category.Add(t);
             db.SaveChanges();
-            Response.Redirect("/Categories.aspx");
+            Response.Redirect("/Categories/Categories.aspx");
         }
     }
 }

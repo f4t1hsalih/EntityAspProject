@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Categories.aspx.cs" Inherits="EntityAspProject.Categories" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Categories.aspx.cs" Inherits="EntityAspProject.Categories.Categories" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -21,14 +21,14 @@
                                 <tr>
                                     <td><%# Eval("ctg_id") %></td>
                                     <td><%# Eval("ctg_name") %></td>
-                                    <td><asp:HyperLink ID="DeleteLink" runat="server" CssClass="btn btn-danger" NavigateUrl='<%# "/CategoryDelete.aspx?Delete=" + Eval("ctg_id") %>'>Sil</asp:HyperLink></td>
-                                    <td><asp:HyperLink ID="UpdateLink" runat="server" CssClass="btn btn-warning" NavigateUrl='<%# "/CategoryUpdate.aspx?Update=" + Eval("ctg_id") %>'>Güncelle</asp:HyperLink></td>
+                                    <td><asp:HyperLink ID="DeleteLink" runat="server" CssClass="btn btn-danger" NavigateUrl='<%# "/Categories/CategoryDelete.aspx?Delete=" + Eval("ctg_id") %>'>Sil</asp:HyperLink></td>
+                                    <td><asp:HyperLink ID="UpdateLink" runat="server" CssClass="btn btn-warning" NavigateUrl='<%# "/Categories/CategoryUpdate.aspx?Update=" + Eval("ctg_id") %>'>Güncelle</asp:HyperLink></td>
                                 </tr>
                             </ItemTemplate>
                         </asp:Repeater>
                     </tbody>
                 </table>
-                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn btn-primary" NavigateUrl="/CategoryAdd.aspx">Yeni Kategori Ekle</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn btn-primary" NavigateUrl="/Categories/CategoryAdd.aspx">Yeni Kategori Ekle</asp:HyperLink>
             </div>
         </div>
     </div>

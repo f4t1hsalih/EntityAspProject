@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using System.Web.UI.WebControls;
 
-namespace EntityAspProject
+namespace EntityAspProject.Categories
 {
     public partial class Categories : System.Web.UI.Page
     {
