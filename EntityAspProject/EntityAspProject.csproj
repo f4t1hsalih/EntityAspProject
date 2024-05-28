@@ -81,6 +81,7 @@
     <Content Include="CategoryUpdate.aspx" />
     <Content Include="Customers\CustomerDelete.aspx" />
     <Content Include="Customers\Customers.aspx" />
+    <Content Include="Customers\CustomerUpdate.aspx" />
     <Content Include="Entity\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
@@ -148,6 +149,13 @@
     </Compile>
     <Compile Include="Customers\Customers.aspx.designer.cs">
       <DependentUpon>Customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\CustomerUpdate.aspx.cs">
+      <DependentUpon>CustomerUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\CustomerUpdate.aspx.designer.cs">
+      <DependentUpon>CustomerUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Entity\Model1.Context.cs">
       <AutoGen>True</AutoGen>
