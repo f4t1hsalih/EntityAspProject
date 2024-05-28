@@ -27,7 +27,7 @@
                                 <td><%# Eval("prd_id") %></td>
                                 <td><%# Eval("prd_name") %></td>
                                 <td><%# Eval("prd_brand") %></td>
-                                <td><%# Eval("prd_ctg") %></td>
+                                <td><%# Eval("ctg_name") %></td>
                                 <td><%# Eval("prd_price") %> ₺</td>
                                 <td><%# Eval("prd_stock") %></td>
                                 <td><asp:HyperLink ID="DeleteLink" runat="server" CssClass="btn btn-danger" NavigateUrl='<%# "/Products/ProductDelete.aspx?Delete=" + Eval("prd_id") %>'>Sil</asp:HyperLink></td>
