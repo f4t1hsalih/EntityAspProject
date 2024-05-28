@@ -21,8 +21,8 @@
                                 <tr>
                                     <td><%# Eval("ctg_id") %></td>
                                     <td><%# Eval("ctg_name") %></td>
-                                    <td><asp:HyperLink ID="DeleteLink" runat="server" CssClass="btn btn-danger" NavigateUrl='<%# "CategoryDelete.aspx?Delete=" + Eval("ctg_id") %>'>Sil</asp:HyperLink></td>
-                                    <td><asp:HyperLink ID="UpdateLink" runat="server" CssClass="btn btn-warning" NavigateUrl='<%# "CategoryUpdate.aspx?Update=" + Eval("ctg_id") %>'>Güncelle</asp:HyperLink></td>
+                                    <td><asp:HyperLink ID="DeleteLink" runat="server" CssClass="btn btn-danger" NavigateUrl='<%# "/CategoryDelete.aspx?Delete=" + Eval("ctg_id") %>'>Sil</asp:HyperLink></td>
+                                    <td><asp:HyperLink ID="UpdateLink" runat="server" CssClass="btn btn-warning" NavigateUrl='<%# "/CategoryUpdate.aspx?Update=" + Eval("ctg_id") %>'>Güncelle</asp:HyperLink></td>
                                 </tr>
                             </ItemTemplate>
                         </asp:Repeater>

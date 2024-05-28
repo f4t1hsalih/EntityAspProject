@@ -91,6 +91,7 @@
     </Content>
     <Content Include="Products\ProductAdd.aspx" />
     <Content Include="Products\ProductList.aspx" />
+    <Content Include="Products\ProductUpdate.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +173,13 @@
     </Compile>
     <Compile Include="Products\ProductList.aspx.designer.cs">
       <DependentUpon>ProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\ProductUpdate.aspx.cs">
+      <DependentUpon>ProductUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\ProductUpdate.aspx.designer.cs">
+      <DependentUpon>ProductUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

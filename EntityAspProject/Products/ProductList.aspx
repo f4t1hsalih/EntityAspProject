@@ -30,8 +30,8 @@
                                 <td><%# Eval("prd_ctg") %></td>
                                 <td><%# Eval("prd_price") %> ₺</td>
                                 <td><%# Eval("prd_stock") %></td>
-                                <td><asp:HyperLink ID="DeleteLink" runat="server" CssClass="btn btn-danger" NavigateUrl='<%# "ProductDelete.aspx?Delete=" + Eval("prd_id") %>'>Sil</asp:HyperLink></td>
-                                <td><asp:HyperLink ID="UpdateLink" runat="server" CssClass="btn btn-warning" NavigateUrl='<%# "ProductUpdate.aspx?Update=" + Eval("prd_id") %>'>Güncelle</asp:HyperLink></td>
+                                <td><asp:HyperLink ID="DeleteLink" runat="server" CssClass="btn btn-danger" NavigateUrl='<%# "/Products/ProductDelete.aspx?Delete=" + Eval("prd_id") %>'>Sil</asp:HyperLink></td>
+                                <td><asp:HyperLink ID="UpdateLink" runat="server" CssClass="btn btn-warning" NavigateUrl='<%# "/Products/ProductUpdate.aspx?Update=" + Eval("prd_id") %>'>Güncelle</asp:HyperLink></td>
                             </tr>
                         </ItemTemplate>
                     </asp:Repeater>

@@ -26,6 +26,7 @@ namespace EntityAspProject.Entity
         public Nullable<byte> prd_ctg { get; set; }
         public Nullable<decimal> prd_price { get; set; }
         public Nullable<short> prd_stock { get; set; }
+        public Nullable<bool> prd_status { get; set; }
     
         public virtual tbl_category tbl_category { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

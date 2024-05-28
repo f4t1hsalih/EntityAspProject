@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="UdemyProductTrackingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="UdemyProductTrackingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tbl_category">
           <Key>
             <PropertyRef Name="ctg_id" />
@@ -30,6 +30,7 @@
           <Property Name="prd_ctg" Type="tinyint" />
           <Property Name="prd_price" Type="decimal" Precision="18" Scale="2" />
           <Property Name="prd_stock" Type="smallint" />
+          <Property Name="prd_status" Type="bit" />
         </EntityType>
         <EntityType Name="tbl_sale">
           <Key>
@@ -119,8 +120,7 @@
             <End Role="tbl_sale" EntitySet="tbl_sale" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="UdemyProductTrackingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -153,6 +153,7 @@
           <Property Name="prd_stock" Type="Int16" />
           <NavigationProperty Name="tbl_category" Relationship="Self.FK_tbl_product_tbl_category" FromRole="tbl_product" ToRole="tbl_category" />
           <NavigationProperty Name="tbl_sale" Relationship="Self.FK_tbl_sale_tbl_product" FromRole="tbl_product" ToRole="tbl_sale" />
+          <Property Name="prd_status" Type="Boolean" />
         </EntityType>
         <EntityType Name="tbl_sale">
           <Key>
@@ -272,6 +273,7 @@
           <EntitySetMapping Name="tbl_product">
             <EntityTypeMapping TypeName="UdemyProductTrackingModel.tbl_product">
               <MappingFragment StoreEntitySet="tbl_product">
+                <ScalarProperty Name="prd_status" ColumnName="prd_status" />
                 <ScalarProperty Name="prd_id" ColumnName="prd_id" />
                 <ScalarProperty Name="prd_name" ColumnName="prd_name" />
                 <ScalarProperty Name="prd_brand" ColumnName="prd_brand" />
