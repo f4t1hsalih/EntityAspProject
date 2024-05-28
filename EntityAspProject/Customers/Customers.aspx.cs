@@ -10,7 +10,8 @@ namespace EntityAspProject.Customers
         protected void Page_Load(object sender, EventArgs e)
         {
             UdemyProductTrackingEntities db = new UdemyProductTrackingEntities();
-            Repeater1.DataSource = db.tbl_customer.ToList();
+            var values = (from x in db.tbl_customer where x.ctm_status != false select x).ToList();
+            Repeater1.DataSource = values;
             Repeater1.DataBind();
         }
 
