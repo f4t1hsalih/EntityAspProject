@@ -29,8 +29,23 @@ namespace EntityAspProject.Products
                 txtPrdPrice.Text = product.prd_price.ToString();
                 txtPrdStock.Text = product.prd_stock.ToString();
 
-                //Response.Redirect("/Products/ProductList.aspx");
+                
             }
+        }
+
+        protected void btnPrdUpdate_Click(object sender, EventArgs e)
+        {
+            UdemyProductTrackingEntities db = new UdemyProductTrackingEntities();
+            int id = Convert.ToInt32(Request.QueryString["Update"]);
+
+            var prod = db.tbl_product.Find(id);
+            prod.prd_name = txtPrdName.Text;
+            prod.prd_brand = txtPrdBrand.Text;
+            prod.prd_ctg = byte.Parse(ddlPrdCategory.SelectedValue.ToString());
+            prod.prd_price = decimal.Parse(txtPrdPrice.Text);
+            prod.prd_stock = short.Parse(txtPrdStock.Text);
+            db.SaveChanges();
+            Response.Redirect("/Products/ProductList.aspx");
         }
     }
 }

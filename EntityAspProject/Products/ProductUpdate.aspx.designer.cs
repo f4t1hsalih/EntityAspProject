@@ -15,6 +15,15 @@ namespace EntityAspProject.Products
     {
 
         /// <summary>
+        /// lblPrdID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPrdID;
+
+        /// <summary>
         /// txtPrdID control.
         /// </summary>
         /// <remarks>
@@ -22,6 +31,15 @@ namespace EntityAspProject.Products
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPrdID;
+
+        /// <summary>
+        /// lblPrdName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPrdName;
 
         /// <summary>
         /// txtPrdName control.
@@ -33,6 +51,15 @@ namespace EntityAspProject.Products
         protected global::System.Web.UI.WebControls.TextBox txtPrdName;
 
         /// <summary>
+        /// lblPrdBrand control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPrdBrand;
+
+        /// <summary>
         /// txtPrdBrand control.
         /// </summary>
         /// <remarks>
@@ -40,6 +67,15 @@ namespace EntityAspProject.Products
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPrdBrand;
+
+        /// <summary>
+        /// lblPrdCategory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPrdCategory;
 
         /// <summary>
         /// ddlPrdCategory control.
@@ -51,6 +87,15 @@ namespace EntityAspProject.Products
         protected global::System.Web.UI.WebControls.DropDownList ddlPrdCategory;
 
         /// <summary>
+        /// lblPrdPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPrdPrice;
+
+        /// <summary>
         /// txtPrdPrice control.
         /// </summary>
         /// <remarks>
@@ -58,6 +103,15 @@ namespace EntityAspProject.Products
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPrdPrice;
+
+        /// <summary>
+        /// lblPrdStock control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPrdStock;
 
         /// <summary>
         /// txtPrdStock control.
