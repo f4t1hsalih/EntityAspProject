@@ -13,7 +13,7 @@ namespace EntityAspProject.Sales
             //var values = db.tbl_sale.ToList();
 
             var values = (from x in db.tbl_sale
-                          where x.sal_status == true
+                          where x.sal_status != false
                           select new
                           {
                               x.sal_id,

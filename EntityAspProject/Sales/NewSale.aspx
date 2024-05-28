@@ -25,7 +25,7 @@
                     <asp:TextBox runat="server" ID="txtPrice" CssClass="form-control"></asp:TextBox>
                 </div>
                 <div class="form-group">
-                    <asp:Button runat="server" ID="btnSalAdd" CssClass="btn btn-primary" Text="Satış Yap" />
+                    <asp:Button runat="server" ID="btnSalAdd" CssClass="btn btn-primary" Text="Satış Yap" OnClick="btnSalAdd_Click" />
                 </div>
             </form>
         </div>
