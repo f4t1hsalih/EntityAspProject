@@ -10,7 +10,7 @@ namespace EntityAspProject.Staff
         protected void Page_Load(object sender, EventArgs e)
         {
             UdemyProductTrackingEntities db = new UdemyProductTrackingEntities();
-            Repeater1.DataSource = db.tbl_staff.ToList();
+            Repeater1.DataSource = (from x in db.tbl_staff where x.stf_status != false select x).ToList();
             Repeater1.DataBind();
         }
     }

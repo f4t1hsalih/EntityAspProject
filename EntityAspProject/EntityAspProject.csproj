@@ -100,6 +100,7 @@
     <Content Include="Sales\SaleDelete.aspx" />
     <Content Include="Sales\SaleList.aspx" />
     <Content Include="Sales\SaleUpdate.aspx" />
+    <Content Include="Staff\StaffDelete.aspx" />
     <Content Include="Staff\StaffList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -246,6 +247,13 @@
     </Compile>
     <Compile Include="Sales\SaleUpdate.aspx.designer.cs">
       <DependentUpon>SaleUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\StaffDelete.aspx.cs">
+      <DependentUpon>StaffDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\StaffDelete.aspx.designer.cs">
+      <DependentUpon>StaffDelete.aspx</DependentUpon>
     </Compile>
     <Compile Include="Staff\StaffList.aspx.cs">
       <DependentUpon>StaffList.aspx</DependentUpon>
