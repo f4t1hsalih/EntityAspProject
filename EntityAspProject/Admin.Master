@@ -26,7 +26,7 @@
                 <li><a href="/Statistics/Statistics.aspx">İstatistikler</a></li>
                 <%--<li><a href="#">Ayarlar</a></li>--%>
                 <%--<li><a href="#">Kullanıcı Paneli</a></li>--%>
-                <%--<li><a href="#">Çıkış Yap</a></li>--%>
+                <li><a href="/Login.aspx">Çıkış Yap</a></li>
             </ul>
 
         </div>

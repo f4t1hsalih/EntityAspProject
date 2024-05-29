@@ -92,6 +92,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Login.aspx" />
     <Content Include="Login\css\main.css" />
     <Content Include="Login\css\util.css" />
     <Content Include="Login\fonts\font-awesome-4.7.0\css\font-awesome.css" />
@@ -106,7 +107,6 @@
     <Content Include="Login\images\icons\favicon.ico" />
     <Content Include="Login\js\main.js" />
     <Content Include="Login\js\map-custom.js" />
-    <Content Include="Login\Login.aspx" />
     <Content Include="Login\vendor\animate\animate.css" />
     <Content Include="Login\vendor\animsition\css\animsition.css" />
     <Content Include="Login\vendor\animsition\css\animsition.min.css" />
@@ -239,6 +239,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Entity\tbl_admin.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entity\tbl_category.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -254,11 +257,11 @@
     <Compile Include="Entity\tbl_staff.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Login\Login.aspx.cs">
+    <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login\Login.aspx.designer.cs">
+    <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products\ProductAdd.aspx.cs">

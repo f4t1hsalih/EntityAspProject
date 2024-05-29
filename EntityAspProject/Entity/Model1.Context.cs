@@ -32,6 +32,7 @@ namespace EntityAspProject.Entity
         public virtual DbSet<tbl_product> tbl_product { get; set; }
         public virtual DbSet<tbl_sale> tbl_sale { get; set; }
         public virtual DbSet<tbl_staff> tbl_staff { get; set; }
+        public virtual DbSet<tbl_admin> tbl_admin { get; set; }
     
         public virtual ObjectResult<string> ctgCount()
         {
