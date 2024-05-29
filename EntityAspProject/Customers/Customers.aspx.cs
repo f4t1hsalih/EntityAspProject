@@ -20,7 +20,7 @@ namespace EntityAspProject.Customers
             UdemyProductTrackingEntities db = new UdemyProductTrackingEntities();
             tbl_customer customer = new tbl_customer();
             customer.ctm_name = txtCtmName.Text;
-            customer.ctm_surname = txtCtmSurnaame.Text;
+            customer.ctm_surname = txtCtmSurname.Text;
             db.tbl_customer.Add(customer);
             db.SaveChanges();
             Response.Redirect("/Customers/Customers.aspx");

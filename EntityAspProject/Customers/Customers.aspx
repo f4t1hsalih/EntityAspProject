@@ -40,28 +40,30 @@
                 <div>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal1">Yeni Müşteri Ekle</button>
 
-                    <div class="modal" id="Model1">
+                    <div class="modal" id="Modal1">
                         <div class="modal-dialog">
 
                             <div class="modal-content">
 
                                 <div class="modal-header">
-                                    <h2 class="madal-title">Müşteri Ekleme Paneli</h2>
+                                    <h2 class="modal-title">Müşteri Ekleme Paneli</h2>
                                 </div>
 
                                 <form runat="server">
                                     <div class="modal-body">
-                                        <div>
-                                            <asp:Label ID="lblCtmName" runat="server" CssClass="form-group" Text="Ad"></asp:Label>
+                                        <div class="form-group">
+                                            <asp:Label ID="lblCtmName" runat="server" Text="Ad"></asp:Label>
                                             <asp:TextBox ID="txtCtmName" runat="server" CssClass="form-control" placeholder="Müşteri Adı..."></asp:TextBox>
                                         </div>
-                                        <div>
-                                            <asp:Label ID="lblCtmSurname" runat="server" CssClass="form-group" Text="Soyad"></asp:Label>
-                                            <asp:TextBox ID="txtCtmSurnaame" runat="server" CssClass="form-control" placeholder="Müşteri Soyadı..."></asp:TextBox>
+                                        <div class="form-group">
+                                            <asp:Label ID="lblCtmSurname" runat="server" Text="Soyad"></asp:Label>
+                                            <asp:TextBox ID="txtCtmSurname" runat="server" CssClass="form-control" placeholder="Müşteri Soyadı..."></asp:TextBox>
                                         </div>
                                     </div>
-                                    <asp:Button ID="btnCtmKaydet" runat="server" CssClass="btn btn-info" Text="Kaydet" OnClick="btnCtmKaydet_Click" />
-                                    <asp:Button ID="btnCtmVazgec" runat="server" CssClass="btn btn-danger" data-dismiss="modal" Text="Vazgec" />
+                                    <div class="modal-footer">
+                                        <asp:Button ID="btnCtmKaydet" runat="server" CssClass="btn btn-info" Text="Kaydet" OnClick="btnCtmKaydet_Click" />
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Vazgeç</button>
+                                    </div>
                                 </form>
 
                             </div>

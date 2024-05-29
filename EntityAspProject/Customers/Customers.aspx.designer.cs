@@ -51,13 +51,13 @@ namespace EntityAspProject.Customers
         protected global::System.Web.UI.WebControls.Label lblCtmSurname;
 
         /// <summary>
-        /// txtCtmSurnaame control.
+        /// txtCtmSurname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCtmSurnaame;
+        protected global::System.Web.UI.WebControls.TextBox txtCtmSurname;
 
         /// <summary>
         /// btnCtmKaydet control.
@@ -67,14 +67,5 @@ namespace EntityAspProject.Customers
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCtmKaydet;
-
-        /// <summary>
-        /// btnCtmVazgec control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCtmVazgec;
     }
 }
