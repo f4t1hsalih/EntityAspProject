@@ -101,6 +101,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="ctgCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="UdemyProductTrackingModelStoreContainer">
           <EntitySet Name="tbl_category" EntityType="Self.tbl_category" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_customer" EntityType="Self.tbl_customer" Schema="dbo" store:Type="Tables" />
@@ -254,6 +255,7 @@
             <End Role="tbl_staff" EntitySet="tbl_staff" />
             <End Role="tbl_sale" EntitySet="tbl_sale" />
           </AssociationSet>
+          <FunctionImport Name="ctgCount" ReturnType="Collection(String)" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -314,6 +316,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="ctgCount" FunctionName="UdemyProductTrackingModel.Store.ctgCount" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

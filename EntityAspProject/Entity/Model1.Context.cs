@@ -12,6 +12,8 @@ namespace EntityAspProject.Entity
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class UdemyProductTrackingEntities : DbContext
     {
@@ -30,5 +32,10 @@ namespace EntityAspProject.Entity
         public virtual DbSet<tbl_product> tbl_product { get; set; }
         public virtual DbSet<tbl_sale> tbl_sale { get; set; }
         public virtual DbSet<tbl_staff> tbl_staff { get; set; }
+    
+        public virtual ObjectResult<string> ctgCount()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("ctgCount");
+        }
     }
 }

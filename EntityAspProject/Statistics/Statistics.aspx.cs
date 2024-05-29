@@ -15,6 +15,8 @@ namespace EntityAspProject.Statistics
             Label4.Text = db.tbl_category.Where(x => x.ctg_status != false).Count().ToString();
             Label5.Text = db.tbl_product.Count(x => x.prd_status != false).ToString();
             Label6.Text = db.tbl_product.Count(x => x.prd_status == false).ToString();
+            Label7.Text = (from x in db.tbl_product orderby x.prd_stock descending select x.prd_name).FirstOrDefault();
+            Label8.Text = db.ctgCount().FirstOrDefault();
         }
     }
 }
