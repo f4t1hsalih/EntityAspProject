@@ -29,7 +29,6 @@ namespace EntityAspProject.Products
                 txtPrdPrice.Text = product.prd_price.ToString();
                 txtPrdStock.Text = product.prd_stock.ToString();
 
-                
             }
         }
 
