@@ -17,7 +17,7 @@ namespace EntityAspProject.Products
             //var product2 = (from x in db.tbl_product where x.prd_status == true select x).ToList();
 
             var product = (from x in db.tbl_product
-                           where x.prd_status == true
+                           where x.prd_status != false
                            select new
                            {
                                x.prd_id,
