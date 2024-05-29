@@ -23,6 +23,7 @@
                 <li><a href="/Products/ProductList.aspx">Ürünler</a></li>
                 <li><a href="/Staff/StaffList.aspx">Personeller</a></li>
                 <li><a href="/Sales/SaleList.aspx">Satışlar</a></li>
+                <li><a href="/Statistics/Statistics.aspx">İstatistikler</a></li>
                 <%--<li><a href="#">Ayarlar</a></li>--%>
                 <%--<li><a href="#">Kullanıcı Paneli</a></li>--%>
                 <%--<li><a href="#">Çıkış Yap</a></li>--%>
