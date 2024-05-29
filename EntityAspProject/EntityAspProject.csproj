@@ -141,6 +141,13 @@
     <Content Include="Products\ProductDelete.aspx" />
     <Content Include="Products\ProductList.aspx" />
     <Content Include="Products\ProductUpdate.aspx" />
+    <Content Include="ProjectPictures\Ekran görüntüsü 2024-05-29 190926.png" />
+    <Content Include="ProjectPictures\Ekran görüntüsü 2024-05-29 190946.png" />
+    <Content Include="ProjectPictures\Ekran görüntüsü 2024-05-29 191004.png" />
+    <Content Include="ProjectPictures\Ekran görüntüsü 2024-05-29 191019.png" />
+    <Content Include="ProjectPictures\Ekran görüntüsü 2024-05-29 191039.png" />
+    <Content Include="ProjectPictures\Ekran görüntüsü 2024-05-29 191049.png" />
+    <Content Include="ProjectPictures\Ekran görüntüsü 2024-05-29 191152.png" />
     <Content Include="Sales\NewSale.aspx" />
     <Content Include="Sales\SaleDelete.aspx" />
     <Content Include="Sales\SaleList.aspx" />
